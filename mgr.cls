@@ -235,28 +235,28 @@
 \textheight 25cm 
 
 %definicje danych do utworzenia strony tyułowej
-\if@pl
-\newcommand{\@naglowek}{PRACA DYPLOMOWA \\ MAGISTERSKA}
-\newcommand{\@napisProwadzacy}{Prowadz\k{a}cy prac\k{e}:}
-\newcommand{\@napisOcena}{Ocena pracy:}
-\fi
-\if@en
+% \if@pl
+% \newcommand{\@naglowek}{PRACA DYPLOMOWA \\ MAGISTERSKA}
+% \newcommand{\@napisProwadzacy}{Prowadz\k{a}cy prac\k{e}:}
+% \newcommand{\@napisOcena}{Ocena pracy:}
+% \fi
+% \if@en
 \newcommand{\@naglowek}{MASTER OF SCIENCE THESIS}
 \newcommand{\@napisProwadzacy}{Supervisor:}
 \newcommand{\@napisOcena}{Grade:}
-\fi
+% \fi
 
-\if@eng
-\if@pl
-\renewcommand{\@naglowek}{PRACA DYPLOMOWA \\ IN\.ZYNIERSKA}
-\fi
-\if@en
-\renewcommand{\@naglowek}{ENGINEERING THESIS}
-\fi
+% \if@eng
+% \if@pl
+% \renewcommand{\@naglowek}{PRACA DYPLOMOWA \\ IN\.ZYNIERSKA}
+% \fi
+% \if@en
+% \renewcommand{\@naglowek}{ENGINEERING THESIS}
+% \fi
 
-%\renewcommand{\@napisProwadzacy}{Prowadz\k{a}cy prac\k{e}:}
-%\renewcommand{\@napisOcena}{Ocena pracy:}
-\fi
+% %\renewcommand{\@napisProwadzacy}{Prowadz\k{a}cy prac\k{e}:}
+% %\renewcommand{\@napisOcena}{Ocena pracy:}
+% \fi
 
 \renewcommand{\@author}{Brak autora\typeout{MGR.cls Warning: Brak podanego nazwiska autora, uzyj polecenia author}}
 \renewcommand{\author}[1]{\renewcommand{\@author}{#1}}
@@ -429,7 +429,7 @@
 \if@en
 \newcommand{\@university}{%
   \Large  \mbox{\hspace{-3mm}WROC\L{}AW UNIVERSITY OF SCIENCE AND TECHNOLOGY}\\[0mm]%
-  FACULTY OF ELECTRONICS%
+ FACULTY OF INFORMATION AND COMMUNICATION TECHNOLOGY%
   \vspace{-6mm}%
 }
 \newcommand{\@fieldtext}{\Large\sc Field:}
