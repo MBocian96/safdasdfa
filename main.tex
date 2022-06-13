@@ -1,30 +1,25 @@
 \input{src/header.tex}
 
 \begin{document}
-    % \bibliographystyle{plabbrv} 
+    % \bibliographystyle{plabbrv}
     \bibliographystyle{siam}
-    
+
     \maketitle
-    \import{src/}{dedication.tex}
-    \tableofcontents 
     
-    \import{chapters/latex/}{src.tex}
-    \import{chapters/structure/}{src.tex}
-    \import{chapters/printing/}{src.tex}
-    \import{chapters/review/}{src.tex}
-    \import{chapters/mistakes/}{src.tex}
+    \import{src}{dedication.tex}
+    \tableofcontents
+    \import{chapters/entry/}{introduction.tex}
+    \import{chapters/state_of_art/}{src.tex}
+    \import{chapters/problem_definition/}{src.tex}
     
-    \appendixpage % Użyć tylko jeśli występuje więcej niż jeden dodatek!
-    \begin{appendix}
-        \import{appendices/appendix1/}{src.tex}
-    \end{appendix}
+    \import{chapters/dataset/}{src.tex}
+    \import{chapters/experimental_tests}{src.tex}
     
     \addcontentsline{toc}{chapter}{\bibname}
     \bibliography{src/bibliography}
 
-    \addcontentsline{toc}{chapter}{Spis rysunków}
+    \addcontentsline{toc}{chapter}{List of figures}
     \listoffigures
-    \addcontentsline{toc}{chapter}{Spis tablic}
+    \addcontentsline{toc}{chapter}{List of tables}
     \listoftables
 \end{document}
-
